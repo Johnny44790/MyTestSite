@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Flexbox</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>       
+        <div class="products">
+            <div class="product-card">
+                <img id="1" >
+                <h2>Canon</h2>
+                <p>555$</p>
+            </div>
+            <div class="product-card">
+                <img id="2">
+                <h2>Leica III</h2>
+                <p>1550$</p>
+            </div>
+            <div class="product-card">
+                <img id="3">
+                <h2>Samsung S24 Ultra</h2>
+                <p>1305$</p>
+            </div>
+            <div class="product-card">
+                <img id="4">
+                <h2>Iphone 15 Pro Max</h2>
+                <p>1300$</p>
+            </div>
+        </div> 
+
+        <form action="result.html" method="get">
+            <div class="form-step">
+                <h2>Крок 1: Ваші деталі</h2>
+
+                <!-- Ім'я -->
+                <label for="name">Ім'я</label>
+                <input id="name" type="text" name="name" placeholder="Ivan">
+    
+                <label for="surname">Прізвище</label>
+                <input id="surname" type="text" name="surname" placeholder="Chornobryvenko">
+    
+                <label for="email">Email</label>
+                <input id="email" type="email" name="email" placeholder="johnny44790@gmail.com">
+            </div>                    
+            <div class="form-step">
+                <h2>Крок 2: Вибір</h2>
+        
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="subscribe" value="newsletter">Підписатися на Розсилку</label>
+                </div>
+            
+                <div class="radio-group">
+                    <label id="delivery"> Доставка:</label>
+                    <label><input type="radio" name="delivery" value="standard" checked> Стандарт</label>
+                    <label><input type="radio" name="delivery" value="express"> Експрес</label>
+                </div>
+        
+                <label for="commodity">Я хочу купити:</label>
+                <select id="commodity" name="commodity">
+                    <option value="Cannon">Cannon</option>
+                    <option value="Leica 3">Leica 3</option>
+                    <option value="Samsung">Samsung</option>
+                    <option value="Iphone">Iphone</option>
+                    <option value="Leica 2">Leica 2</option>
+                </select>
+            </div>
+            <div class="form-step">
+                <input type="button" value="sldkla">
+                <button type="submit">Купити</button>
+            </div>
+        </form>
+    </body>
+</html>
+
+<script src="myscript.js"></script>
